@@ -1,0 +1,46 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5vw 0 5vw;
+    height: 15vh;
+    background-color: tomato;
+    box-shadow: 0 0 3vh 0 tomato;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 20%;
+
+    img {
+        width: 30%;
+    }
+
+    h1 {
+        font-size: 2.5vw;
+        color: white;
+    }
+}
+
+.navHeader {
+    width: 30%;
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        li {
+            font-size: 1.6vw;
+        }
+    }
+}
+
+.link {
+    color: white;
+    &:hover {
+        color: rgb(207, 207, 207);
+    }
+}

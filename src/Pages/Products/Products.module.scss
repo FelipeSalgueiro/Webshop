@@ -1,0 +1,39 @@
+.catalog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin: 4vh 0 4vh 0;
+    padding-top: 3vh;
+    padding-bottom: 0.5vh;
+    border-left: solid gray 0.1vw;
+    border-right: solid gray 0.1vw;
+}
+
+.productCard {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 20vh;
+    margin-bottom: 2.5vh;
+    background-color: white;
+    box-shadow: 0.01vw 0.05vw 0.1vw 0.15vw gray;
+    border-radius: 2vw;
+    img {
+        width: 10%;
+    }
+    div {
+        width: 66%;
+        h2 {
+            font-size: 1.35vw;
+        }
+        p {
+            font-size: 1.15vw;
+        }
+    }
+    h3 {
+        width: 12%;
+        font-size: 1.4vw;
+    }
+}
