@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Route, Routes, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import axios from 'axios'
 import s from './Home.module.scss'
 export default function Home() {
@@ -29,7 +29,6 @@ export default function Home() {
                     wellRated[i].ind = item.id
                     wellRated[i].ava = item.rating.rate
                     wellRated.sort((a, b) => a.ava - b.ava)
-                    console.log(wellRated)
                     i = 4
                 }
             }

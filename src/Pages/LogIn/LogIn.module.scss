@@ -1,13 +1,17 @@
 form {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
+    gap: 2vh;
     width: 45%;
-    height: 55vh;
     margin-top: 5vh;
+    padding: 3vh 0 3vh 0;
     box-shadow: 0.01vw 0.05vw 0.1vw 0.15vw gray;
     border-radius: 1.5vw;
+
+    h2 {
+        font-size: 2vw;
+    }
 }
 
 .formFirstHalf {
@@ -15,13 +19,48 @@ form {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 27.5vh;
+    gap: 2.5vh;
+
+    div {
+        width: 100%;
+
+        label {
+            font-size: 1.3vw;
+        }
+
+        input {
+            width: 12vw;
+            height: 3vh;
+            padding-left: 1vw;
+            border-radius: 2vw;
+            font-size: 1vw;
+        }
+    }
 }
 
 .formSecondHalf {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
-    height: 27.5vh;
+    gap: 2.5vh;
+
+    label {
+        font-size: 1.3vw;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    input {
+        width: 10vw;
+        height: 4vh;
+        border-radius: 2vw;
+        font-size: 1.5vw;
+        background-color: lightblue;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
 }
