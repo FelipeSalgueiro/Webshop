@@ -15,7 +15,7 @@ export default function Products() {
         <main>
             <section className={s.catalog}>
                 {product.map((item) => (
-                    <Link to='/' className={s.productCard} >
+                    <Link key={item.id} to='/' className={s.productCard} >
                         <img src={item.image} />
                         <div>
                             <h2>{item.title}</h2>

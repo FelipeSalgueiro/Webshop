@@ -26,21 +26,47 @@
     div {
         width: 66%;
         h2 {
-            font-size: 1.35vw;
+            font-size: 1.4rem;
             color: black;
         }
         p {
-            font-size: 1.15vw;
+            font-size: 1.2rem;
             color: black;
         }
     }
     h3 {
         width: 12%;
-        font-size: 1.4vw;
+        font-size: 1.6rem;
         color: black;
     }
     &:hover {
         width: 85%;
         cursor: pointer;
+    }
+}
+
+@media (max-width: 450px) {
+    .catalog {
+        width: 90%;
+    }
+    .productCard {
+        flex-direction: column;
+        height: 50vh;
+        padding: 2.5vh 0 2vh 0;
+        img {
+            width: 30%;
+        }
+        div{
+            h2 {
+                font-size: 1.2rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+        }
+        h3 {
+            width: 50%;
+            font-size: 2rem;
+        }
     }
 }

@@ -1,7 +1,6 @@
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom"
 import Home from '../../Pages/Home/Home.jsx'
 import Products from '../../Pages/Products/Products.jsx'
-import ProductPage from '../../Pages/ProductPage/ProductPage.jsx'
 import LogIn from '../../Pages/LogIn/LogIn.jsx'
 import CreateAccount from '../../Pages/CreateAccount/CreateAccount.jsx'
 import logoCart from "../../assets/webshopIcon.png"
@@ -25,7 +24,6 @@ export default function Header() {
             <Routes>
                 <Route path='/' element={<Home/>} />
                 <Route path='/products' element={<Products/>} />
-                <Route path='/product' element={<ProductPage/>} />
                 <Route path='/log_in/*' element={<LogIn/>} />
                 <Route path='/create_new_account' element={<CreateAccount/>} />
             </Routes>

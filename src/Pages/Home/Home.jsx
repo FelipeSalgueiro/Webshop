@@ -51,7 +51,7 @@ export default function Home() {
                 <section className={s.trendCatalog}>
                     {trend.length > 0 ? (
                         trend.map((item) => (
-                            <article className={s.trendCard}>
+                            <Link key = {item.id} to='/' className={s.trendCard}>
                                 <div className={s.trendCardFirstHalf}>
                                     <img src={item.image} />
                                 </div>
@@ -60,7 +60,7 @@ export default function Home() {
                                     <p>Rating: {item.rating.rate}</p>
                                     <h4>$ {item.price}</h4>
                                 </div>
-                            </article>
+                            </Link>
                         ))) : (<p>Carregando Produtos...</p>)}
                 </section>
             </section>

@@ -1,17 +1,17 @@
 .trendCatalogSection {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
     width: 90%;
-    height: 50vh;
-    margin-top: 3vh;
+    gap: 5vh;
+    margin: 3vh 0 3vh 0;
+    padding: 3vh 0 3vh 0;
     box-shadow: 0.01vw 0.05vw 0.1vw 0.15vw gray;
     border-radius: 1.5vw;
 }
 
 .catalogTitle {
-    font-size: 2vw;
+    font-size: 2.5rem;
 }
 
 .trendCatalog {
@@ -23,12 +23,16 @@
 .trendCard {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
     width: 25%;
     height: 35vh;
+    color: black;
     box-shadow: 0.01vw 0.05vw 0.1vw 0.15vw gray;
     border-radius: 1.5vw;
+    &:hover {
+        width: 26%;
+        height: 36vh;
+    }
 }
 
 .trendCardFirstHalf {
@@ -37,6 +41,7 @@
     align-items: center;
     width: 100%;
     height: 50%;
+
     img {
         width: 20%;
     }
@@ -48,16 +53,47 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 40%;
+    gap: 1vh;
+
     h3 {
         width: 80%;
-        font-size: 1.1vw;
+        font-size: 1.3rem;
         text-align: center;
     }
+
     p {
-        font-size: 0.8vw;
+        font-size: 1.2rem;
     }
+
     h4 {
-        font-size: 1vw;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .catalogTitle {
+        font-size: 1.8rem;
+    }
+    .trendCatalog {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 5vh;
+    }
+    .trendCard {
+        width: 80%;
+        height: 45vh;
+        box-shadow: 0 0 2vh 0.3vh gray;
+        border-radius: 5vh;
+    }
+    .trendCardSecondHalf {
+        h3 {
+            font-size: 1.2rem;
+        }
+        p {
+            font-size: 1rem;
+        }
+        h4 {
+            font-size: 1.5rem;
+        }
     }
 }
